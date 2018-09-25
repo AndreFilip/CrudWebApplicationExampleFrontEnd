@@ -8,4 +8,4 @@
 
 -Navigate inside the main folder of it where the "src" subfolder is, copy this path (eg. C:\etc\etc\src) , open the shell (command prompt in Windows OS), move to the path (tip: write in the command prompt "cd <path>" and press Enter), then type "ng serve -o" and press Enter. The frontend part should be working and should see it after some seconds in you browser.
 
-
+-The application runs on http://localhost:4200/ but if you want to change port (maybe is being used) type in the previous step  "ng serve -o --port=<port that you want eg. 4205>"
