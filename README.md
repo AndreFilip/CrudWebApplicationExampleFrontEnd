@@ -4,8 +4,8 @@
 
 -This is the frontend implementation of Public Soft Coding Project and was written in Angular.
 
--download the project and extract the files
+-Download the project and extract the files
 
--go inside the main folder of it where the "src" subfolder is, copy this path (eg. C:\etc\etc\src) , open the shell (command prompt in Windows OS), move to the path (tip: write in the command prompt "cd <path>" and press Enter), then type "ng serve -o" and press Enter. The frontend part should be working and should see it after some seconds in you browser.
+-Navigate inside the main folder of it where the "src" subfolder is, copy this path (eg. C:\etc\etc\src) , open the shell (command prompt in Windows OS), move to the path (tip: write in the command prompt "cd <path>" and press Enter), then type "ng serve -o" and press Enter. The frontend part should be working and should see it after some seconds in you browser.
 
 
