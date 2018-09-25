@@ -1,6 +1,6 @@
 # PublicSoftCodingProjectFrontEnd
 
-###This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+### This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
 -This is the frontend implementation of Public Soft Coding Project and is written in Angular.
 
