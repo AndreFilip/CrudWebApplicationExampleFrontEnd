@@ -1,0 +1,65 @@
+/* header */
+
+#searchInput {
+    border-radius: 10px;
+}
+
+button  {
+    border:1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: grey;
+}
+
+
+#moreButton {
+    padding: 4px 10px;
+}
+
+#search {
+    padding: 4px 15px;
+}
+
+
+#secondRow div:nth-child(1){
+    padding-left: 0px;
+    /* border:1px solid black; */
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+color: black;
+cursor: pointer;
+}
+
+ul li span {
+    color: black;
+    cursor: pointer;
+    }
+
+ul {
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+
+/* results */
+
+article div:first-of-type{
+    border:1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+
+}

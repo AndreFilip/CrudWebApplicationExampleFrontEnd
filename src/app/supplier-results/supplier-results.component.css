@@ -1,0 +1,8 @@
+/* button {
+    background: transparent;
+    cursor: pointer;
+} */
+
+.buttons i {
+    cursor: pointer;
+}

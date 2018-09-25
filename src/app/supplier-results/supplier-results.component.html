@@ -1,0 +1,11 @@
+
+<h2>Results: {{foundSuppliers.length}}</h2>
+<section *ngIf="foundSuppliers?.length > 0">
+  <article class="row my-1 justify-content-between" *ngFor="let supplier of foundSuppliers;let i = index;">
+    <div class="col-10">
+        {{i+1}}. {{supplier.companyname}} | {{supplier.vat}} | {{supplier.firstname}} | {{supplier.lastname}} | {{supplier.country}} | {{supplier.city}} | {{supplier.address.addressUnumbered}} | {{supplier.address.number}}
+    </div>
+    <a class="col-1 text-center" routerLink="/{{supplier.id}}" ><i class="fas fa-edit" title="Edit Supplier" ></i></a>
+    <div class="col-1 text-center buttons" ><i class="fas fa-trash" title="Delete Supplier" (click)="deleteSupplier(supplier.id)"></i></div>
+  </article>    
+</section>

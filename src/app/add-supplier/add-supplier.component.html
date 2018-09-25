@@ -1,0 +1,36 @@
+<div class="container">
+  <form (ngSubmit)="saveSupplier(form)" #form="ngForm">
+    <div class="row text-center mt-5">
+      <label class="col-12">Companyname:
+        <input ngModel name="companyname" placeholder="Companyname">
+      </label>
+      <label  class="col-12">Firstname:
+        <input ngModel name="firstname" placeholder="Firstname">
+      </label>
+      <label  class="col-12">Lastname:
+          <input ngModel name="lastname" placeholder="Lastname">
+        </label>
+      <label  class="col-12">Irs:
+        <input ngModel name="irs"  placeholder="Irs">
+      </label>
+      <label  class="col-12">City:
+        <input ngModel name="city" placeholder="City">
+      </label>
+      <label  class="col-12">Country:
+        <input ngModel name="country"  placeholder="Country">
+      </label>      
+      <label  class="col-12 mt-3">Address without number:
+        <input ngModel name="addressUnumbered" placeholder="Address without number">
+      </label>
+      <label  class="col-12">Number:
+        <input ngModel name="number"  placeholder="Number">
+      </label>
+    </div>
+    <div class="row my-3 justify-content-center">
+      <div class="col-4 text-center"><button type="button" (click)="goBack()" class="mr-2 btn btn-secondary">Go back</button></div>
+      <div class="col-4 text-center"><button type="submit" class="mr-2 btn btn-primary">Add Supplier</button></div>
+    </div>
+  </form>
+</div>
+  
+  

@@ -1,0 +1,35 @@
+<div class="container">
+  <h1 class="text-center">CRUD Suppliers</h1>
+  <div class="mt-5">
+    <section class="row justify-content-between">
+    <input id="searchInput" #searchInput class="col-9" placeholder="Search . . ." (keyup)="search(searchInput.value)">
+    <div class="col-1 text-right"><button id="search" title="Search All" (click)="getAllFoundSuppliers(searchInput)"><i class="fas fa-search"></i></button></div>
+    <div class="dropdown col-2 text-center">
+          <button class="dropdown-toggle" id="moreButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More..
+          </button>
+          <div class="dropdown-menu" aria-labelledby="moreButton" >
+            <a class="dropdown-item"  routerLink="/add-supplier" >Add a Supplier</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" (click)="getAll()"  routerLink="">Get All</a>           
+          </div>
+      </div>
+    </section>
+    <section class="row mt-1 justify-content-between" id="secondRow">
+        <div class="col-9">         
+          <ul>
+            <li *ngFor="let supplier of suppliers | async | slice:0:10" >              
+              <a routerLink="/{{supplier.id}}" >
+                {{supplier.companyname}} | {{supplier.vat}} | {{supplier.firstname}} | {{supplier.lastname}} | {{supplier.country}} | {{supplier.city}} | {{supplier.address.addressUnumbered}} | {{supplier.address.number}}
+              </a>
+            </li>
+          </ul>
+        </div>
+    </section>
+  </div>
+
+  <div class="mt-5">
+    <app-supplier-results [foundSuppliers]="foundSuppliersInSearch" (changeSuppliers)="changeFoundSuppliers($event)"></app-supplier-results>    
+  </div>
+</div>
+
